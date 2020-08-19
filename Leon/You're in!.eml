@@ -1,0 +1,815 @@
+Delivered-To: neerajmachinelearning@gmail.com
+Received: by s3.asa1.acemsd3.com id h6oke82lshkj
+	for <neerajmachinelearning@gmail.com>;
+	Fri, 14 Aug 2020 06:02:12 +0000 (envelope-from <bounce-1084185-44-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com>)
+X-Google-Smtp-Source: ABdhPJxy8t7z9rIVoIkmtILVeGLCqF/DcIICyOI08f+cItefrvSzdoGct8DUj4BK6Bf/I1WQNbCg
+X-Received: by 2002:aed:2f87:: with SMTP id m7mr719553qtd.56.1597384932995;       
+ Thu, 13 Aug 2020 23:02:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1597384932; cv=none; d=google.com;
+	s=arc-20160816;
+	b=Y1fAqb1/p6j7VGk1X5ExGnSEmzoWhu13lJK4exfKmzTmB8MgxbZ42Z8nMpBUnRFC8xeDMFOM96q
+	xWN5f9jEbrJ87cR0U0T0wK09io8J8fFSr1xhBCUmB2j5Twc6/eFAYigUUfogDPaVgedFTNv6y7i5a
+	h43fdn6r0lfgOqZsB551xjsLbJ7LbFC0W+7FCCsSydNciKOxdZ34N6o39tuT9VLcnKYPdvVxUACKX
+	riL1AZDKI33qvpKs51ns/djKbgxQRYicgk92JsU1kOmMjnWht973diVwNBhI18ozpy8LlD2BUoiEL
+	7kfSAMrrEMfaZZw3dzxIbL/HID4vcSNeVOBg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+	s=arc-20160816;
+	h=message-id:list-unsubscribe:feedback-id:content-transfer-encoding:
+	mime-version:date:subject:from:to:dkim-signature:dkim-signature;
+	bh=80cgynitJRpsHV6gxJq+dYJva4H+BhrLr7teS0Kw3jE=;
+	b=ZmxGOOADnS5okTO5jtAgKu6pNSjndkXX8Jx7ZFVqe5aNdTOAMkFtxub8hRZneo8CVfDsdO43bn7
+	Z8bgthBQKPuBb6E5zNszAX5/7NPkzZgetEzEiF29TJpODmkHUrFJ+IFCBRztZppxflxwjUeW+yMFI
+	h17u1KbC47JPJ/LakK21QQo0gf7wVcpkVN5KQ2sDAZqBqCnBH4RAUxBilzsMhAHzSFXtwrrbUYV+l
+	FqPPgmdRN/RW0Dtyn8zGYEeCh/IX1cijPQdxgFEjJqpvT9pyy1grHDXQ1pUEbUMK6hPYtOLesOvWS
+	MaUvW7uoB2GCP3rUp73OHu90x3VWYNqY35Qw==
+ARC-Authentication-Results: i=1; mx.google.com;
+	dkim=pass header.i=@completerpabootcamp.com header.s=dk header.b=yl1Zueqf;
+	dkim=pass header.i=@acems1.com header.s=dk header.b=VwQSiTFc; spf=pass
+	(google.com: domain of bounce-1084185-44-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com designates 192.92.97.135 as permitted sender)
+	smtp.mailfrom=
+	"bounce-1084185-44-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com"
+Return-Path: =?us-ascii?q?=3Cbounce-1084185-44-16654-neerajmachinelearning=3Dgmail=2Ecom=40s3=2Ea?=
+ =?us-ascii?q?sa1=2Eacemsd3=2Ecom=3E?=
+Received-SPF: pass (google.com: domain of
+ bounce-1084185-44-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com
+ designates 192.92.97.135 as permitted sender) client-ip=192.92.97.135;
+Authentication-Results: mx.google.com;
+	dkim=pass header.i=@completerpabootcamp.com header.s=dk header.b=yl1Zueqf;
+	dkim=pass header.i=@acems1.com header.s=dk header.b=VwQSiTFc; spf=pass
+	(google.com: domain of bounce-1084185-44-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com designates 192.92.97.135 as permitted sender)
+	smtp.mailfrom=
+	"bounce-1084185-44-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com"
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk; d=acems1.com;
+	h=To:From:Subject:Date:MIME-Version:Content-Type:Content-Transfer-Encoding:
+	List-Unsubscribe:Message-ID;
+	bh=80cgynitJRpsHV6gxJq+dYJva4H+BhrLr7teS0Kw3jE=;
+	b=VwQSiTFcIxWmBAPs+zSWCaMW6y//HZqWuZ+c0drpusovKf7yvQeRyLqjcgW2AwUOmVcAVKAHjAC
+	mj13zp1CerWyBV5HhPT4UlcEWGMu9a7TJ98lg5n+mDvix0AkX2hz3j7zlJMwAmx2UcgkBiI0EXHN3
+	cp+8iaZIu66foIjcLhs=
+To: Neeraj Sharma <neerajmachinelearning@gmail.com>
+From: Leon Petrou <leon@completerpabootcamp.com>
+Subject: You're in!
+Date: Fri, 14 Aug 2020 01:02:12 -0500
+MIME-Version: 1.0
+X-mid: bmVlcmFqbWFjaGluZWxlYXJuaW5nQGdtYWlsLmNvbSAsIGM0NCAsIG02NyAsIHM5MTk3
+Feedback-ID: 1084185:activecampaign
+X-250ok-CID: 1084185-44
+List-Unsubscribe: =?us-ascii?q?=3Cmailto=3Aunsubscribe-a0f27a8abbf1e4821024a44fd9e8dd10-44-83b4c?=
+ =?us-ascii?q?11bbf14cae007e93735f93b0702=40s3=2Easa1=2Eacemsd3=2Ecom=3E=2C?=
+ =?us-ascii?q?_=3Chttps=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Fbox=2Ephp=3Fnl=3D4&c=3D44&m=3D?=
+ =?us-ascii?q?67&s=3D83b4c11bbf14cae007e93735f93b0702&funcml=3Dunsub2&luha=3D1=3E?=
+Message-ID: <20200814060212.20471.428761083.swift@completerpabootcamp.activehosted.com>
+Uid: 8
+Folder: Invoices
+HtmlBody: <!DOCTYPE html><html><head><!--[if !mso]><meta
+ http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--><meta
+ http-equiv="Content-Type" content="text/html; charset=utf-8"><meta
+ http-equiv="Content-Language" content="en-us"><meta name="format-detection"
+ content="telephone=no"><meta name="format-detection" content="date=no"><meta
+ name="format-detection" content="address=no"><meta name="format-detection"
+ content="email=no"><style data-ac-keep="true"> .ExternalClass { width: 100%;
+ background: inherit; background-color: inherit; } .ExternalClass p,
+ .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undoreset div p,
+ .undoreset p { margin-bottom: 20px; } div[class^="aolmail_divbody"] {
+ overflow: auto; } [owa] #ac-footer { padding: 20px 0px !important;
+ background: inherit; background-color: inherit; } </style><style
+ data-ac-keep="true">@media only screen and (max-width: 600px) {
+ =?utf-8?q?=2F*-----------------------------------------------------------?=
+ =?utf-8?q?--------------*\?= Abandoned Cart widget
+ \*------------------------------------------------------------------------*/
+ .td_abandoned-cart img {display: block;padding-right: 0
+ !important;padding-bottom: 0 !important;width: 100% !important;max-width:
+ 100% !important;height: auto !important;} body { padding: 0!important;
+ font-size:1em!important; } * { -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box; box-sizing: border-box; } *[class].divbody
+ {-webkit-text-size-adjust:none !important; width:auto !important;}
+ *[class].td_picture img {width:auto !important;} *[class].td_text {
+ line-height: 110%; } *[class].td_button { width: auto; } /* Collapse all
+ block elements */ :not(.body) table { display: block!important;
+ float:none!important; border-collapse:collapse !important; width:100%
+ !important; min-width:100% !important; clear:both!important; } :not(.body)
+ thead,:not(.body) tbody, :not(.body) tr { display:block!important;
+ float:none!important; width:100% !important; } :not(.body) th, :not(.body)
+ td, :not(.body) p { display:block!important; float:none!important; width:100%
+ !important; clear:both!important; } /* Remove browser default styling for
+ elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; margin-top:
+ 10px; -webkit-margin-before: 0; -webkit-margin-after: 0;
+ -webkit-padding-start: 0; } /* Set default height for spacer once collapse */
+ *[class].spacer { height: auto!important; } a[href^=date]{ color:inherit
+ !important; text-decoration:none !important;} a[href^=telephone]{
+ color:inherit !important; text-decoration:none !important;} a[href^=address]{
+ color:inherit !important; text-decoration:none !important;} a[href^=email]{
+ color:inherit !important; text-decoration:none !important;} /* Default table
+ cell height */
+ =?utf-8?q?td=5Bheight=3D=2214=22=5D{height=3A14px!important=3Bfont-size=3A14px!importan?=
+ =?utf-8?q?t=3Bline-height=3A14px!important=3B}td=5Bheight=3D=2212=22=5D{height=3A12px!imp?=
+ =?utf-8?q?ortant=3Bfont-size=3A12px!important=3Bline-height=3A12px!important=3B}?=
+ =?utf-8?q?_=2F*-----------------------------------------------------------?=
+ =?utf-8?q?--------------*\_Product_Widget?=
+ =?utf-8?q?_\*-----------------------------------------------------------?=
+ =?utf-8?q?--------------*=2F?= .td_product > div { float: none !important;
+ width: 100% !important; margin-bottom: 20px !important; } .td_product > div
+ img { width: 75% !important; } /* Default social icons */
+ *[class].ac-social-icon-16 {width:16px !important; height:16px !important;}
+ *[class].ac-social-icon-24 {width:24px !important; height:24px !important;}
+ *[class].ac-social-icon-28 {width:28px !important; height:28px !important;}
+ *[class].__ac_social_icons { margin-right: 0px !important; } }</style><style
+ data-ac-keep="true"> @media only screen and (max-width: 320px) { div.divbody
+ { padding: 20px !important; } .td_rss .rss-item img.iphone_large_image {
+ width: auto !important; } u + .body { display: table !important; width: 100vw
+ !important; min-width: 100vw !important; } u + .body table { display: table
+ !important; width: 100% !important; min-width: 100% !important; } u + .body
+ td { display: block !important; width: 100% !important; min-width: 100%
+ !important; } u + .body img { display: inline-block !important; margin: auto
+ !important; width: auto !important; vertical-align: bottom !important; } u +
+ .body center { display: block !important; margin: auto !important; width:
+ 100% !important; min-width: 100% !important; text-align: center !important; }
+ u + .body table._ac_social_table, u + .body table._ac_social_table td, u +
+ .body table._ac_social_table div, u + .body table._ac_social_table a {
+ display: inline-block !important; margin: auto !important;width: auto
+ !important; min-width: auto !important; text-align: center !important; } u +
+ .body table._ac_social_table img { display: inline-block !important; margin:
+ auto !important; width: 32px !important; min-width: 32px !important;
+ max-width: 32px !important; }}@media only screen and (max-width: 375px) {
+ div.divbody { padding: 20px !important; } .td_rss .rss-item
+ img.iphone_large_image { width: auto !important; } u + .body { display: table
+ !important; width: 100vw !important; min-width: 100vw !important; } u + .body
+ table { display: table !important; width: 100% !important; min-width: 100%
+ !important; } u + .body td { display: block !important; width: 100%
+ !important; min-width: 100% !important; } u + .body img { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ vertical-align: bottom !important; } u + .body center { display: block
+ !important; margin: auto !important; width: 100% !important; min-width: 100%
+ !important; text-align: center !important; } u + .body
+ table._ac_social_table, u + .body table._ac_social_table td, u + .body
+ table._ac_social_table div, u + .body table._ac_social_table a { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ min-width:auto !important; text-align: center !important; } u + .body
+ table._ac_social_table img { display: inline-block !important; margin: auto
+ !important; width: 32px !important; min-width: 32px !important; max-width:
+ 32px !important; }}@media only screen and (max-width: 414px) { div.divbody {
+ padding: 20px !important; } .td_rss .rss-item img.iphone_large_image { width:
+ auto !important; } u + .body { display: table !important; width: 100vw
+ !important; min-width: 100vw !important; } u + .body table { display: table
+ !important; width: 100% !important; min-width: 100% !important; } u + .body
+ td { display: block !important; width: 100% !important; min-width: 100%
+ !important; } u + .body img { display: inline-block !important; margin: auto
+ !important; width: auto !important; vertical-align: bottom !important; } u +
+ .body center { display: block !important; margin: auto !important; width:
+ 100% !important; min-width: 100% !important; text-align: center !important; }
+ u + .body table._ac_social_table, u + .body table._ac_social_table td, u +
+ .body table._ac_social_table div, u + .body table._ac_social_table a {
+ display: inline-block !important; margin: auto !important; width: auto
+ !important; min-width:auto !important; text-align: center !important; } u +
+ .body table._ac_social_table img { display: inline-block !important; margin:
+ auto !important; width: 32px !important; min-width: 32px !important;
+ max-width: 32px !important; }}@media only screen and (max-width: 667px) {
+ div.divbody { padding: 20px !important; } .td_rss .rss-item
+ img.iphone_large_image { width: auto !important; } u + .body { display: table
+ !important; width: 100vw !important; min-width: 100vw !important; } u + .body
+ table { display: table !important; width: 100% !important; min-width: 100%
+ !important; } u + .body td { display: block !important; width: 100%
+ !important; min-width: 100% !important; } u + .body img { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ vertical-align: bottom !important; } u + .body center { display: block
+ !important; margin: auto !important; width: 100% !important; min-width: 100%
+ !important; text-align: center !important; } u + .body
+ table._ac_social_table, u + .body table._ac_social_table td, u + .body
+ table._ac_social_table div, u + .body table._ac_social_table a { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ min-width:auto !important; text-align: center !important; } u + .body
+ table._ac_social_table img { display: inline-block !important; margin: auto
+ !important; width: 32px !important; min-width: 32px !important; max-width:
+ 32px !important; }} </style><!--[if !mso]><!-- webfonts
+ --><!--<![endif]--><!--[if lt mso 12]> <![endif]--></head><body
+ id="ac-designer" class="body" style="font-family: Arial; line-height: 1.1;
+ margin: 0px; background-color: #FFFFFF; width: 100%; text-align:
+ center;"><div class="divbody" style="margin: 0px; outline: none; padding:
+ 0px; color: #000000; font-family: arial; line-height: 1.1; width: 100%;
+ background-color: #FFFFFF; background: #FFFFFF; text-align: center;"><table
+ class="template-table" border="0" cellpadding="0" cellspacing="0"
+ width="100%" align="left" style="font-size: 14px; min-width: auto;
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;
+ background: #FFFFFF;"><tr><td align="center" valign="top" width="100%"><table
+ class="template-table" border="0" cellpadding="0" cellspacing="0" width="650"
+ bgcolor="#FFFFFF" style="font-size: 14px; min-width: auto; mso-table-lspace:
+ 0pt; mso-table-rspace: 0pt; max-width:
+ 650px;"><tr><tdid="layout_table_a409d715a0a3f6e00cb521421aeb98c0ef5d42da"
+ valign="top" align="center" width="650"><table cellpadding="0"
+ cellspacing="0" border="0" class="layout layout-table root-table" width="650"
+ style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;"><tr><td id="layout-row-margin273" valign="top"><table
+ width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size:
+ 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr
+ id="layout-row273" class="layout layout-row widget _widget_text "
+ style="margin: 0; padding: 0;"><td id="layout-row-padding273"
+ valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0"
+ style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;"><tr><td id="text_div268" class="td_text td_block"
+ valign="top" align="left" width="650" style="line-height: 150%; margin: 0;
+ outline: none; padding: 0; color: inherit; font-size: 12px;
+ font-weight:inherit; line-height: 1.5; text-decoration: inherit; font-family:
+ Arial; mso-line-height-rule: exactly;"> <div style="line-height: 150%;
+ margin: 0; outline: none; padding: 0; line-height: 1.5; mso-line-height-rule:
+ exactly;" class="" data-line-height="1.5"><div style="margin: 0; outline:
+ none; padding: 0; font-family: arial; color: #000000; font-size: 14px;
+ font-style: normal; font-weight: 400; text-align: start;" class=""><span
+ data-mce-style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"
+ style="color: inherit; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: inherit; font-family: arial;"
+ class="">Congratulations Neeraj Sharma,<br style="" class=""><br style=""
+ class="">You have successfully registered for the Complete RPA Bootcamp Free
+ Training!<br style="" class=""><br class=""></span></div><div style="margin:
+ 0; outline: none; padding: 0; font-family: arial; color: #000000; font-size:
+ 14px; font-style: normal; font-weight: 400; text-align: start;"
+ class=""></div><div style="margin: 0; outline: none; padding: 0; font-family:
+ arial; color: #000000; font-size: 14px; font-style: normal; font-weight: 400;
+ text-align: start;" class=""><span data-mce-style="font-family: arial,
+ helvetica, sans-serif; font-size: 10pt;" style="color: inherit; font-size:
+ inherit; font-weight: inherit; line-height: inherit; text-decoration:
+ inherit; font-family: arial;" class="">Your seat is officially confirmed.
+ Here is your unique link: <br style="" class=""><br style="" class=""><strong
+ style="margin: 0; outline: none; padding: 0; font-style: inherit;
+ font-weight: bolder; font-size: 14px; font-family: arial;" class="">Webinar
+ Link: <a
+ =?utf-8?q?href=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Flt=2Ephp=3Fs=3D83b4c1?=
+ =?utf-8?q?1bbf14cae007e93735f93b0702&i=3D44A67A4A181=22?=
+ data-ac-default-color="1" target="_blank" style="margin: 0; outline: none;
+ padding: 0; color: #045FB4; text-decoration: underline; font-family: arial;
+ font-weight: inherit;" class=""><span style="color: inherit;font-size:
+ inherit; font-weight: inherit; line-height: inherit; text-decoration:
+ inherit; font-family: arial;" class="">CLICK
+ HERE</span></a></strong></span></div><div style="margin: 0; outline: none;
+ padding: 0; font-family: arial; font-size: 14px; font-style: normal;
+ font-weight: 400; text-align: start;" class=""><span
+ data-mce-style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"
+ style="color: inherit; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: inherit; font-family: arial;" class=""><br style=""
+ class=""><span style="color: inherit; font-size: inherit; font-weight:
+ inherit; line-height: inherit; text-decoration: inherit;" class="">Finally,
+ here's three things to remember:</span><br style="" class=""><br style=""
+ class=""><strong style="margin: 0; outline: none; padding: 0; color: inherit;
+ font-style: inherit; font-weight: bolder; font-size: 14px; font-family:
+ arial;" class="">1. BLOCK OUT 60 MINUTES:</strong><span style="color:
+ inherit; font-size: inherit; font-weight: inherit; line-height: inherit;
+ text-decoration: inherit;" class=""> Make sure that you block out a full60
+ minutes for the webinar in your calendar.</span><br style="" class=""><br
+ style="" class=""><strong style="margin: 0; outline: none; padding: 0; color:
+ inherit; font-style: inherit; font-weight: bolder; font-size: 14px;
+ font-family: arial;" class="">2. SHOW UP EARLY:</strong><span style="color:
+ inherit; font-size: inherit; font-weight: inherit; line-height: inherit;
+ text-decoration: inherit;" class=""> Make sure that you attend live and show
+ up at least 5-minutes early. The software we use has an attendee limit so I
+ don't want you to lose your seat!</span><br style="" class=""><br style=""
+ class=""><strong style="margin: 0; outline: none; padding: 0; color: inherit;
+ font-style: inherit; font-weight: bolder; font-size: 14px; font-family:
+ arial;" class="">3. <span style="color: #ff0000; font-size: inherit;
+ font-weight: inherit; line-height: inherit; text-decoration: inherit;
+ font-family: arial;" class="">USE A DESKTOP COMPUTER:</span></strong><span
+ style="color:inherit; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: inherit; font-family: arial;" class=""><span
+ style="color: #ff0000; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: inherit;" class=""> Make sure you attend the
+ webinar using your </span><em style="margin: 0; outline: none; padding: 0;
+ color: #ff0000; font-style: italic; font-weight: inherit; font-size: 14px;
+ font-family: arial;" class="">LAPTOP</em><span style="color: #ff0000;
+ font-size: inherit; font-weight: inherit; line-height: inherit;
+ text-decoration: inherit;" class=""> or </span><em style="margin: 0; outline:
+ none; padding: 0; color: #ff0000; font-style: italic; font-weight: inherit;
+ font-size: 14px; font-family: arial;" class="">DESKTOP</em><span
+ style="color: #ff0000; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: inherit;" class=""> computer. The webinar system we
+ use doesn't behave well with mobileso using a computer will dramatically
+ improve your experience and allow you to learn more!</span><br class=""><br
+ class=""><div style="margin: 0; outline: none; padding: 0; text-align:
+ center;" class="">*****</div></span></span></div><div style="margin: 0;
+ outline: none; padding: 0; text-align: start;" class=""><br class=""><span
+ style="color: #000000; font-size: 14px; font-weight: 400; line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;"
+ class="">I am so proud of you for signing up to my free RPA training and
+ taking this first important step towards learning a new skill or expanding
+ your knowledge in RPA. </span><br class=""><span style="color: #000000;
+ font-size: 14px; font-weight: bold; line-height: inherit; text-decoration:
+ inherit; font-family: arial; font-style: normal;" class=""> </span><br
+ class=""><span style="color: #000000; font-size: 14px; font-weight: 400;
+ line-height: inherit; text-decoration: inherit; font-family: arial;
+ font-style: normal;" class="">Too many people go through their whole lives
+ without adopting the mindset of continuous-learning and self-improvement.
+ Especially in tech, where the industry changes so rapidly, that you need
+ tokeep learning new skills to stay ahead of the curve.</span><br
+ class=""><span style="color: #000000; font-size: 14px; font-weight: 400;
+ line-height: inherit; text-decoration: inherit; font-family: arial;
+ font-style: normal;" class=""> </span><br class=""><span style="color:
+ #000000; font-size: 14px; font-weight: 400; line-height: inherit;
+ text-decoration: inherit; font-family: arial; font-style: normal;"
+ class="">You know this is negative, fixed mindset thinking! I'm glad you
+ didn't fall for it.</span><br class=""><span style="color: #000000;
+ font-size: 14px; font-weight: 400; line-height: inherit; text-decoration:
+ inherit; font-family: arial; font-style: normal;" class=""> </span><br
+ class=""><span style="color: inherit; font-size: 14px; font-weight: inherit;
+ line-height: inherit; text-decoration: inherit;" class="">There will be
+ challenges ahead on your way to learning RPA and eventually launching your
+ career as an RPA Developer. But none of these challenges arephysically,
+ mentally or even technically difficult.</span><br class=""><span
+ style="color: #000000; font-size: 14px; font-weight: 400; line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;"
+ class=""> </span><br class=""><span style="color: #000000; font-size: 14px;
+ font-weight: 400; line-height: inherit; text-decoration: inherit;
+ font-family: arial; font-style: normal;" class="">The biggest challenge is
+ simply emotional. </span><br class=""><span style="color: #000000; font-size:
+ 14px; font-weight: bold; line-height: inherit; text-decoration: inherit;
+ font-family: arial; font-style: normal;" class=""> </span><br class=""><span
+ style="color: #000000; font-size: 14px; font-weight: 400; line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;"
+ class="">Deep down we think that =?utf-8?b?d2XigJlyZQ==?= not good enough
+ because we're not natural born coders or developers.</span><br class=""><span
+ style="color: #000000;font-size: 14px; font-weight: bold; line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;"
+ class=""> </span><br class=""><span style="color: inherit; font-size: 14px;
+ font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+ class="">Have you ever doubted your abilities?</span><br class=""><span
+ style="color: #000000; font-size: 14px; font-weight: bold; line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;"
+ class=""> <br class=""><span style="color: #000000; font-size: 14px;
+ font-weight: 400; line-height: inherit; text-decoration: inherit;
+ font-family: arial; font-style: normal;" class="">To learn a new tech
+ skill...</span> </span><br class=""><span style="color: inherit; font-size:
+ 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+ class="">To be a developer...<br class=""></span><br class=""><span
+ style="color: #000000; font-size: 14px; font-weight: 400;line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;"
+ class="">Are you comfortable with it?</span><br class=""><span style="color:
+ #000000; font-size: 14px; font-weight: bold; line-height: inherit;
+ text-decoration: inherit; font-family: arial; font-style: normal;" class="">
+ </span><br class=""><span style="color: inherit; font-size: 14px;
+ font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+ class="">Once you have gained emotional mastery of </span><span style="color:
+ inherit; font-size: 14px; font-weight: inherit; line-height: inherit;
+ text-decoration: inherit;" class="">believing in yourself and that you <span
+ style="color: inherit; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: underline;" class="">do have the
+ ability</span></span><span style="color: inherit; font-size: 14px;
+ font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+ class="">, the path towardsbecoming a professional RPA Developer is clear and
+ smooth.<br class=""><br class=""><span style="color: #000000; font-size:
+ 14px; font-weight: 400; line-height: inherit; text-decoration: inherit;
+ font-family: arial; font-style: normal;" class="">I look forward to seeing
+ you inside the webinar </span><span style="color: #000000; font-size: 14px;
+ font-weight: 400; line-height: inherit; text-decoration: inherit;
+ font-family: arial; font-style: normal;" class="">Neeraj Sharma.</span><br
+ style="" class=""><br style="" class=""><strong style="margin: 0; outline:
+ none; padding: 0; font-style: inherit; font-weight: bolder; font-size: 14px;
+ font-family: arial; color: #000000;" class="">Your Webinar Link: <a
+ =?utf-8?q?href=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Flt=2Ephp=3Fs=3D83b4c1?=
+ =?utf-8?q?1bbf14cae007e93735f93b0702&i=3D44A67A4A181=22?=
+ data-ac-default-color="1" target="_blank" style="margin: 0; outline: none;
+ padding: 0; color: #045FB4; text-decoration: underline; font-family: arial;
+ font-weight:inherit;" class=""><span style="color: inherit; font-size:
+ inherit; font-weight: inherit; line-height: inherit; text-decoration:
+ inherit; font-family: arial;" class="">CLICK HERE</span></a></strong><span
+ style="color: #000000; font-size: 12px; font-weight: 400; line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;"
+ class=""> </span> </span><br class=""><span style="color: #000000; font-size:
+ 14px; font-weight: bold; line-height: inherit; text-decoration: inherit;
+ font-family: arial; font-style: normal;" class=""> </span><br class=""><span
+ style="color: #000000; font-size: 14px; font-weight: 400; line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: normal;"
+ class="">Sincerely,</span><br class=""><span style="color: #000000;
+ font-size: 14px; font-weight: bold; line-height: inherit; text-decoration:
+ inherit; font-family: arial; font-style: normal;" class=""> </span><br
+ class=""><span style="color: inherit;font-size: 14px; font-weight: bold;
+ line-height: inherit; text-decoration: inherit; font-style: italic;"
+ class="">Leon Petrou</span></div></div><!--[if (gte mso 12)&(lte mso 15)
+ ]><style data-ac-keep="true" data-ac-inline="false"> #text_div268,
+ #text_div268 div { line-height: 150% !important;
+ =?utf-8?q?}=3B=3C=2Fstyle=3E=3C!=5Bendif=5D--=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Ft?=
+ =?utf-8?q?d=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Fdiv=3E=3Cimg?=
+ =?utf-8?q?_src=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Flt=2Ephp=3Fnl=3D4&c=3D44?=
+ =?utf-8?q?&m=3D67&s=3D83b4c11bbf14cae007e93735f93b0702&l=3Dopen=22_border=3D=220=22?=
+ width="1" height="1"
+ =?utf-8?q?style=3D=22display=3Ablock=3Bwidth=3A1px!important=3Bmin-width=3A1px!import?=
+ =?utf-8?q?ant=3Bmax-width=3A1px!important=3Bheight=3A1px!important=3Bborder=3A0=3Bove?=
+ =?utf-8?q?rflow=3Ahidden=3B=22_=2F=3E=3Cdiv_id=3D=22ac-footer=22?=
+ =?utf-8?q?_style=3D=22clear=3Aboth=3Bbackground-color=3Ainherit=3Bbackground=3Ainherit?=
+ =?utf-8?q?=3Bmin-width=3A100%=3Bmso-table-lspace=3A0pt=3Bmso-table-rspace=3A0pt=3Bpad?=
+ =?utf-8?q?ding=3A20px=3Bcolor=3A#000000=3Bfont-size=3A11px=3Bfont-family=3Aarial=2Chelv?=
+ =?utf-8?q?etica=2Csans-serif=3Bline-height=3A140%=3Bline-height=3A1=2E4=3Btext-align=3A?=
+ =?utf-8?q?center=3Bbox-sizing=3Aborder-box=3B=22=3E?=	<center>		Sent to:
+ <span
+ =?utf-8?q?style=3D=22font-size=3A11px=3Bfont-family=3Aarial=2Chelvetica=2Csans-serif=3B?=
+ =?utf-8?q?font-weight=3Anormal=3Btext-decoration=3Anone=3Boutline=3Anone=3B=22=3Eneeraj?=
+ =?utf-8?q?machinelearning=40gmail=2Ecom=3C=2Fspan=3E=09=09=3Cbr=3E=09=09=3Cbr=3E=09=09=3Ca?=
+ =?utf-8?q?_href=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Fproc=2Ephp=3Fnl=3D4&c?=
+ =?utf-8?q?=3D44&m=3D67&s=3D83b4c11bbf14cae007e93735f93b0702&act=3Dunsub=22?=
+ =?utf-8?q?_style=3D=22font-size=3A11px=3Bfont-family=3Aarial=2Chelvetica=2Csans-serif=3B?=
+ =?utf-8?q?font-weight=3Abold=3Btext-decoration=3Aunderline=3B=22=3E=3Cspan?=
+ style="font-weight:bold;text-decoration:underline;">Unsubscribe</span></a>	
+	<br>		<br> Complete RPA Bootcamp | Leon Petrou, Inc., 651 N. Broad St. ,
+ Suite 206, Middletown, Delaware 19709, United States	</center></div><br
+ clear="all" /></body></html>
+Content-Type: multipart/alternative; boundary="=-VUHqMTd9+pBO6IlnkqSN4g=="
+
+--=-VUHqMTd9+pBO6IlnkqSN4g==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Id: <4ad7dc39-32d3-47b5-a782-cd51be117297>
+
+<!DOCTYPE html><html>
+<head><!--[if !mso]><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=
+=3Dedge"><!--<![endif]--><meta http-equiv=3D"Content-Type" content=3D"=
+text/html; charset=3Dutf-8"><meta http-equiv=3D"Content-Language" cont=
+ent=3D"en-us"><meta name=3D"format-detection" content=3D"telephone=3Dn=
+o"><meta name=3D"format-detection" content=3D"date=3Dno"><meta name=3D=
+"format-detection" content=3D"address=3Dno"><meta name=3D"format-detec=
+tion" content=3D"email=3Dno"><style data-ac-keep=3D"true"> .ExternalCl=
+ass { width: 100%; background: inherit; background-color: inherit; } .=
+ExternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .=
+undoreset div p, .undoreset p { margin-bottom: 20px; } div[class^=3D"a=
+olmail_divbody"] { overflow: auto; } [owa] #ac-footer { padding: 20px =
+0px !important; background: inherit; background-color: inherit; } </st=
+yle><style data-ac-keep=3D"true">
+@media only screen and (max-width: 600px) { /*------------------------=
+-------------------------------------------------*\ Abandoned Cart wid=
+get \*----------------------------------------------------------------=
+--------*/ .td_abandoned-cart img {display: block;padding-right: 0 !im=
+portant;padding-bottom: 0 !important;width: 100% !important;max-width:=
+ 100% !important;height: auto !important;} body { padding: 0!important=
+; font-size:1em!important; } * { -webkit-box-sizing: border-box; -moz-=
+box-sizing: border-box; box-sizing: border-box; } *[class].divbody {-w=
+ebkit-text-size-adjust:none !important; width:auto !important;} *[clas=
+s].td_picture img {width:auto !important;} *[class].td_text { line-hei=
+ght: 110%; } *[class].td_button { width: auto; } /* Collapse all block=
+ elements */ :not(.body) table { display: block!important; float:none!=
+important; border-collapse:collapse !important; width:100% !important;=
+ min-width:100% !important; clear:both!important; } :not(.body) thead,
+:not(.body) tbody, :not(.body) tr { display:block!important; float:non=
+e!important; width:100% !important; } :not(.body) th, :not(.body) td, =
+:not(.body) p { display:block!important; float:none!important; width:1=
+00% !important; clear:both!important; } /* Remove browser default styl=
+ing for elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; m=
+argin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after: 0; -w=
+ebkit-padding-start: 0; } /* Set default height for spacer once collap=
+se */ *[class].spacer { height: auto!important; } a[href^=3Ddate]{ col=
+or:inherit !important; text-decoration:none !important;} a[href^=3Dtel=
+ephone]{ color:inherit !important; text-decoration:none !important;} a=
+[href^=3Daddress]{ color:inherit !important; text-decoration:none !imp=
+ortant;} a[href^=3Demail]{ color:inherit !important; text-decoration:n=
+one !important;} /* Default table cell height */ td[height=3D"14"]{hei=
+ght:14px!important;font-size:14px!important;line-height:14px!important=
+;}
+td[height=3D"12"]{height:12px!important;font-size:12px!important;line-=
+height:12px!important;} /*--------------------------------------------=
+-----------------------------*\ Product Widget \*---------------------=
+----------------------------------------------------*/ .td_product > d=
+iv { float: none !important; width: 100% !important; margin-bottom: 20=
+px !important; } .td_product > div img { width: 75% !important; } /* D=
+efault social icons */ *[class].ac-social-icon-16 {width:16px !importa=
+nt; height:16px !important;} *[class].ac-social-icon-24 {width:24px !i=
+mportant; height:24px !important;} *[class].ac-social-icon-28 {width:2=
+8px !important; height:28px !important;} *[class].__ac_social_icons { =
+margin-right: 0px !important; } }
+</style><style data-ac-keep=3D"true"> @media only screen and (max-widt=
+h: 320px) { div.divbody { padding: 20px !important; } .td_rss .rss-ite=
+m img.iphone_large_image { width: auto !important; } u + .body { displ=
+ay: table !important; width: 100vw !important; min-width: 100vw !impor=
+tant; } u + .body table { display: table !important; width: 100% !impo=
+rtant; min-width: 100% !important; } u + .body td { display: block !im=
+portant; width: 100% !important; min-width: 100% !important; } u + .bo=
+dy img { display: inline-block !important; margin: auto !important; wi=
+dth: auto !important; vertical-align: bottom !important; } u + .body c=
+enter { display: block !important; margin: auto !important; width: 100=
+% !important; min-width: 100% !important; text-align: center !importan=
+t; } u + .body table._ac_social_table, u + .body table._ac_social_tabl=
+e td, u + .body table._ac_social_table div, u + .body table._ac_social=
+_table a { display: inline-block !important; margin: auto !important;
+width: auto !important; min-width: auto !important; text-align: center=
+ !important; } u + .body table._ac_social_table img { display: inline-=
+block !important; margin: auto !important; width: 32px !important; min=
+-width: 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 375px) { div.divbody { padding: 20p=
+x !important; } .td_rss .rss-item img.iphone_large_image { width: auto=
+ !important; } u + .body { display: table !important; width: 100vw !im=
+portant; min-width: 100vw !important; } u + .body table { display: tab=
+le !important; width: 100% !important; min-width: 100% !important; } u=
+ + .body td { display: block !important; width: 100% !important; min-w=
+idth: 100% !important; } u + .body img { display: inline-block !import=
+ant; margin: auto !important; width: auto !important; vertical-align: =
+bottom !important; } u + .body center { display: block !important; mar=
+gin: auto !important; width: 100% !important; min-width: 100% !importa=
+nt; text-align: center !important; } u + .body table._ac_social_table,=
+ u + .body table._ac_social_table td, u + .body table._ac_social_table=
+ div, u + .body table._ac_social_table a { display: inline-block !impo=
+rtant; margin: auto !important; width: auto !important; min-width:
+auto !important; text-align: center !important; } u + .body table._ac_=
+social_table img { display: inline-block !important; margin: auto !imp=
+ortant; width: 32px !important; min-width: 32px !important; max-width:=
+ 32px !important; }
+}
+@media only screen and (max-width: 414px) { div.divbody { padding: 20p=
+x !important; } .td_rss .rss-item img.iphone_large_image { width: auto=
+ !important; } u + .body { display: table !important; width: 100vw !im=
+portant; min-width: 100vw !important; } u + .body table { display: tab=
+le !important; width: 100% !important; min-width: 100% !important; } u=
+ + .body td { display: block !important; width: 100% !important; min-w=
+idth: 100% !important; } u + .body img { display: inline-block !import=
+ant; margin: auto !important; width: auto !important; vertical-align: =
+bottom !important; } u + .body center { display: block !important; mar=
+gin: auto !important; width: 100% !important; min-width: 100% !importa=
+nt; text-align: center !important; } u + .body table._ac_social_table,=
+ u + .body table._ac_social_table td, u + .body table._ac_social_table=
+ div, u + .body table._ac_social_table a { display: inline-block !impo=
+rtant; margin: auto !important; width: auto !important; min-width:
+auto !important; text-align: center !important; } u + .body table._ac_=
+social_table img { display: inline-block !important; margin: auto !imp=
+ortant; width: 32px !important; min-width: 32px !important; max-width:=
+ 32px !important; }
+}
+@media only screen and (max-width: 667px) { div.divbody { padding: 20p=
+x !important; } .td_rss .rss-item img.iphone_large_image { width: auto=
+ !important; } u + .body { display: table !important; width: 100vw !im=
+portant; min-width: 100vw !important; } u + .body table { display: tab=
+le !important; width: 100% !important; min-width: 100% !important; } u=
+ + .body td { display: block !important; width: 100% !important; min-w=
+idth: 100% !important; } u + .body img { display: inline-block !import=
+ant; margin: auto !important; width: auto !important; vertical-align: =
+bottom !important; } u + .body center { display: block !important; mar=
+gin: auto !important; width: 100% !important; min-width: 100% !importa=
+nt; text-align: center !important; } u + .body table._ac_social_table,=
+ u + .body table._ac_social_table td, u + .body table._ac_social_table=
+ div, u + .body table._ac_social_table a { display: inline-block !impo=
+rtant; margin: auto !important; width: auto !important; min-width:
+auto !important; text-align: center !important; } u + .body table._ac_=
+social_table img { display: inline-block !important; margin: auto !imp=
+ortant; width: 32px !important; min-width: 32px !important; max-width:=
+ 32px !important; }
+} </style><!--[if !mso]><!-- webfonts --><!--<![endif]--><!--[if lt ms=
+o 12]> <![endif]--></head><body id=3D"ac-designer" class=3D"body" styl=
+e=3D"font-family: Arial; line-height: 1.1; margin: 0px; background-col=
+or: #FFFFFF; width: 100%; text-align: center;"><div class=3D"divbody" =
+style=3D"margin: 0px; outline: none; padding: 0px; color: #000000; fon=
+t-family: arial; line-height: 1.1; width: 100%; background-color: #FFF=
+FFF; background: #FFFFFF; text-align: center;"><table class=3D"templat=
+e-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" align=3D"left" style=3D"font-size: 14px; min-width: auto; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF; backgr=
+ound: #FFFFFF;"><tr><td align=3D"center" valign=3D"top" width=3D"100%"=
+><table class=3D"template-table" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"650" bgcolor=3D"#FFFFFF" style=3D"font-size: 14px=
+; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-w=
+idth: 650px;"><tr><td
+id=3D"layout_table_a409d715a0a3f6e00cb521421aeb98c0ef5d42da" valign=3D=
+"top" align=3D"center" width=3D"650"><table cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" class=3D"layout layout-table root-table" width=3D=
+"650" style=3D"font-size: 14px; min-width: 100%; mso-table-lspace: 0pt=
+; mso-table-rspace: 0pt;"><tr><td id=3D"layout-row-margin273" valign=3D=
+"top"><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-size: 14px; min-width: 100%; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;"><tr id=3D"layout-row273" class=3D"layout la=
+yout-row widget _widget_text " style=3D"margin: 0; padding: 0;"><td id=
+=3D"layout-row-padding273" valign=3D"top"><table width=3D"100%" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size: 14px; m=
+in-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td=
+ id=3D"text_div268" class=3D"td_text td_block" valign=3D"top" align=3D=
+"left" width=3D"650" style=3D"line-height: 150%; margin: 0; outline: n=
+one; padding: 0; color: inherit; font-size: 12px; font-weight:
+inherit; line-height: 1.5; text-decoration: inherit; font-family: Aria=
+l; mso-line-height-rule: exactly;"> <div style=3D"line-height: 150%; m=
+argin: 0; outline: none; padding: 0; line-height: 1.5; mso-line-height=
+-rule: exactly;" class=3D"" data-line-height=3D"1.5"><div style=3D"mar=
+gin: 0; outline: none; padding: 0; font-family: arial; color: #000000;=
+ font-size: 14px; font-style: normal; font-weight: 400; text-align: st=
+art;" class=3D""><span data-mce-style=3D"font-family: arial, helvetica=
+, sans-serif; font-size: 10pt;" style=3D"color: inherit; font-size: in=
+herit; font-weight: inherit; line-height: inherit; text-decoration: in=
+herit; font-family: arial;" class=3D"">Congratulations Neeraj Sharma,<=
+br style=3D"" class=3D""><br style=3D"" class=3D"">You have successful=
+ly registered for the Complete RPA Bootcamp Free Training!<br style=3D=
+"" class=3D""><br class=3D""></span></div>
+<div style=3D"margin: 0; outline: none; padding: 0; font-family: arial=
+; color: #000000; font-size: 14px; font-style: normal; font-weight: 40=
+0; text-align: start;" class=3D""></div>
+<div style=3D"margin: 0; outline: none; padding: 0; font-family: arial=
+; color: #000000; font-size: 14px; font-style: normal; font-weight: 40=
+0; text-align: start;" class=3D""><span data-mce-style=3D"font-family:=
+ arial, helvetica, sans-serif; font-size: 10pt;" style=3D"color: inher=
+it; font-size: inherit; font-weight: inherit; line-height: inherit; te=
+xt-decoration: inherit; font-family: arial;" class=3D"">Your seat is o=
+fficially confirmed. Here is your unique link: <br style=3D"" class=3D=
+""><br style=3D"" class=3D""><strong style=3D"margin: 0; outline: none=
+; padding: 0; font-style: inherit; font-weight: bolder; font-size: 14p=
+x; font-family: arial;" class=3D"">Webinar Link: <a href=3D"https://co=
+mpleterpabootcamp.acemlna.com/lt.php?s=3D83b4c11bbf14cae007e93735f93b0=
+702&i=3D44A67A4A181" data-ac-default-color=3D"1" target=3D"_blank" sty=
+le=3D"margin: 0; outline: none; padding: 0; color: #045FB4; text-decor=
+ation: underline; font-family: arial; font-weight: inherit;" class=3D"=
+"><span style=3D"color: inherit;
+font-size: inherit; font-weight: inherit; line-height: inherit; text-d=
+ecoration: inherit; font-family: arial;" class=3D"">CLICK HERE</span><=
+/a></strong></span></div>
+<div style=3D"margin: 0; outline: none; padding: 0; font-family: arial=
+; font-size: 14px; font-style: normal; font-weight: 400; text-align: s=
+tart;" class=3D""><span data-mce-style=3D"font-family: arial, helvetic=
+a, sans-serif; font-size: 10pt;" style=3D"color: inherit; font-size: i=
+nherit; font-weight: inherit; line-height: inherit; text-decoration: i=
+nherit; font-family: arial;" class=3D""><br style=3D"" class=3D""><spa=
+n style=3D"color: inherit; font-size: inherit; font-weight: inherit; l=
+ine-height: inherit; text-decoration: inherit;" class=3D"">Finally, he=
+re's three things to remember:</span><br style=3D"" class=3D""><br sty=
+le=3D"" class=3D""><strong style=3D"margin: 0; outline: none; padding:=
+ 0; color: inherit; font-style: inherit; font-weight: bolder; font-siz=
+e: 14px; font-family: arial;" class=3D"">1. BLOCK OUT 60 MINUTES:</str=
+ong><span style=3D"color: inherit; font-size: inherit; font-weight: in=
+herit; line-height: inherit; text-decoration: inherit;" class=3D""> Ma=
+ke sure that you block out a full
+60 minutes for the webinar in your calendar.</span><br style=3D"" clas=
+s=3D""><br style=3D"" class=3D""><strong style=3D"margin: 0; outline: =
+none; padding: 0; color: inherit; font-style: inherit; font-weight: bo=
+lder; font-size: 14px; font-family: arial;" class=3D"">2. SHOW UP EARL=
+Y:</strong><span style=3D"color: inherit; font-size: inherit; font-wei=
+ght: inherit; line-height: inherit; text-decoration: inherit;" class=3D=
+""> Make sure that you attend live and show up at least 5-minutes earl=
+y. The software we use has an attendee limit so I don't want you to lo=
+se your seat!</span><br style=3D"" class=3D""><br style=3D"" class=3D"=
+"><strong style=3D"margin: 0; outline: none; padding: 0; color: inheri=
+t; font-style: inherit; font-weight: bolder; font-size: 14px; font-fam=
+ily: arial;" class=3D"">3. <span style=3D"color: #ff0000; font-size: i=
+nherit; font-weight: inherit; line-height: inherit; text-decoration: i=
+nherit; font-family: arial;" class=3D"">USE A DESKTOP COMPUTER:</span>=
+</strong><span style=3D"color:
+inherit; font-size: inherit; font-weight: inherit; line-height: inheri=
+t; text-decoration: inherit; font-family: arial;" class=3D""><span sty=
+le=3D"color: #ff0000; font-size: inherit; font-weight: inherit; line-h=
+eight: inherit; text-decoration: inherit;" class=3D""> Make sure you a=
+ttend the webinar using your </span><em style=3D"margin: 0; outline: n=
+one; padding: 0; color: #ff0000; font-style: italic; font-weight: inhe=
+rit; font-size: 14px; font-family: arial;" class=3D"">LAPTOP</em><span=
+ style=3D"color: #ff0000; font-size: inherit; font-weight: inherit; li=
+ne-height: inherit; text-decoration: inherit;" class=3D""> or </span><=
+em style=3D"margin: 0; outline: none; padding: 0; color: #ff0000; font=
+-style: italic; font-weight: inherit; font-size: 14px; font-family: ar=
+ial;" class=3D"">DESKTOP</em><span style=3D"color: #ff0000; font-size:=
+ inherit; font-weight: inherit; line-height: inherit; text-decoration:=
+ inherit;" class=3D""> computer. The webinar system we use doesn't beh=
+ave well with mobile
+so using a computer will dramatically improve your experience and allo=
+w you to learn more!</span><br class=3D""><br class=3D""><div style=3D=
+"margin: 0; outline: none; padding: 0; text-align: center;" class=3D""=
+>*****</div>
+</span></span></div>
+<div style=3D"margin: 0; outline: none; padding: 0; text-align: start;=
+" class=3D""><br class=3D""><span style=3D"color: #000000; font-size: =
+14px; font-weight: 400; line-height: inherit; text-decoration: inherit=
+; font-family: arial; font-style: normal;" class=3D"">I am so proud of=
+ you for signing up to my free RPA training and taking this first impo=
+rtant step towards learning a new skill or expanding your knowledge in=
+ RPA. </span><br class=3D""><span style=3D"color: #000000; font-size: =
+14px; font-weight: bold; line-height: inherit; text-decoration: inheri=
+t; font-family: arial; font-style: normal;" class=3D""> </span><br cla=
+ss=3D""><span style=3D"color: #000000; font-size: 14px; font-weight: 4=
+00; line-height: inherit; text-decoration: inherit; font-family: arial=
+; font-style: normal;" class=3D"">Too many people go through their who=
+le lives without adopting the mindset of continuous-learning and self-=
+improvement. Especially in tech, where the industry changes so rapidly=
+, that you need to
+keep learning new skills to stay ahead of the curve.</span><br class=3D=
+""><span style=3D"color: #000000; font-size: 14px; font-weight: 400; l=
+ine-height: inherit; text-decoration: inherit; font-family: arial; fon=
+t-style: normal;" class=3D""> </span><br class=3D""><span style=3D"col=
+or: #000000; font-size: 14px; font-weight: 400; line-height: inherit; =
+text-decoration: inherit; font-family: arial; font-style: normal;" cla=
+ss=3D"">You know this is negative, fixed mindset thinking! I'm glad yo=
+u didn't fall for it.</span><br class=3D""><span style=3D"color: #0000=
+00; font-size: 14px; font-weight: 400; line-height: inherit; text-deco=
+ration: inherit; font-family: arial; font-style: normal;" class=3D""> =
+</span><br class=3D""><span style=3D"color: inherit; font-size: 14px; =
+font-weight: inherit; line-height: inherit; text-decoration: inherit;"=
+ class=3D"">There will be challenges ahead on your way to learning RPA=
+ and eventually launching your career as an RPA Developer. But none of=
+ these challenges are
+physically, mentally or even technically difficult.</span><br class=3D=
+""><span style=3D"color: #000000; font-size: 14px; font-weight: 400; l=
+ine-height: inherit; text-decoration: inherit; font-family: arial; fon=
+t-style: normal;" class=3D""> </span><br class=3D""><span style=3D"col=
+or: #000000; font-size: 14px; font-weight: 400; line-height: inherit; =
+text-decoration: inherit; font-family: arial; font-style: normal;" cla=
+ss=3D"">The biggest challenge is simply emotional. </span><br class=3D=
+""><span style=3D"color: #000000; font-size: 14px; font-weight: bold; =
+line-height: inherit; text-decoration: inherit; font-family: arial; fo=
+nt-style: normal;" class=3D""> </span><br class=3D""><span style=3D"co=
+lor: #000000; font-size: 14px; font-weight: 400; line-height: inherit;=
+ text-decoration: inherit; font-family: arial; font-style: normal;" cl=
+ass=3D"">Deep down we think that we=E2=80=99re not good enough because=
+ we're not natural born coders or developers.</span><br class=3D""><sp=
+an style=3D"color: #000000;
+font-size: 14px; font-weight: bold; line-height: inherit; text-decorat=
+ion: inherit; font-family: arial; font-style: normal;" class=3D""> </s=
+pan><br class=3D""><span style=3D"color: inherit; font-size: 14px; fon=
+t-weight: inherit; line-height: inherit; text-decoration: inherit;" cl=
+ass=3D"">Have you ever doubted your abilities?</span><br class=3D""><s=
+pan style=3D"color: #000000; font-size: 14px; font-weight: bold; line-=
+height: inherit; text-decoration: inherit; font-family: arial; font-st=
+yle: normal;" class=3D""> <br class=3D""><span style=3D"color: #000000=
+; font-size: 14px; font-weight: 400; line-height: inherit; text-decora=
+tion: inherit; font-family: arial; font-style: normal;" class=3D"">To =
+learn a new tech skill...</span> </span><br class=3D""><span style=3D"=
+color: inherit; font-size: 14px; font-weight: inherit; line-height: in=
+herit; text-decoration: inherit;" class=3D"">To be a developer...<br c=
+lass=3D""></span><br class=3D""><span style=3D"color: #000000; font-si=
+ze: 14px; font-weight: 400;
+line-height: inherit; text-decoration: inherit; font-family: arial; fo=
+nt-style: normal;" class=3D"">Are you comfortable with it?</span><br c=
+lass=3D""><span style=3D"color: #000000; font-size: 14px; font-weight:=
+ bold; line-height: inherit; text-decoration: inherit; font-family: ar=
+ial; font-style: normal;" class=3D""> </span><br class=3D""><span styl=
+e=3D"color: inherit; font-size: 14px; font-weight: inherit; line-heigh=
+t: inherit; text-decoration: inherit;" class=3D"">Once you have gained=
+ emotional mastery of </span><span style=3D"color: inherit; font-size:=
+ 14px; font-weight: inherit; line-height: inherit; text-decoration: in=
+herit;" class=3D"">believing in yourself and that you <span style=3D"c=
+olor: inherit; font-size: inherit; font-weight: inherit; line-height: =
+inherit; text-decoration: underline;" class=3D"">do have the ability</=
+span></span><span style=3D"color: inherit; font-size: 14px; font-weigh=
+t: inherit; line-height: inherit; text-decoration: inherit;" class=3D"=
+">, the path towards
+becoming a professional RPA Developer is clear and smooth.<br class=3D=
+""><br class=3D""><span style=3D"color: #000000; font-size: 14px; font=
+-weight: 400; line-height: inherit; text-decoration: inherit; font-fam=
+ily: arial; font-style: normal;" class=3D"">I look forward to seeing y=
+ou inside the webinar </span><span style=3D"color: #000000; font-size:=
+ 14px; font-weight: 400; line-height: inherit; text-decoration: inheri=
+t; font-family: arial; font-style: normal;" class=3D"">Neeraj Sharma.<=
+/span><br style=3D"" class=3D""><br style=3D"" class=3D""><strong styl=
+e=3D"margin: 0; outline: none; padding: 0; font-style: inherit; font-w=
+eight: bolder; font-size: 14px; font-family: arial; color: #000000;" c=
+lass=3D"">Your Webinar Link: <a href=3D"https://completerpabootcamp.ac=
+emlna.com/lt.php?s=3D83b4c11bbf14cae007e93735f93b0702&i=3D44A67A4A181"=
+ data-ac-default-color=3D"1" target=3D"_blank" style=3D"margin: 0; out=
+line: none; padding: 0; color: #045FB4; text-decoration: underline; fo=
+nt-family: arial; font-weight:
+inherit;" class=3D""><span style=3D"color: inherit; font-size: inherit=
+; font-weight: inherit; line-height: inherit; text-decoration: inherit=
+; font-family: arial;" class=3D"">CLICK HERE</span></a></strong><span =
+style=3D"color: #000000; font-size: 12px; font-weight: 400; line-heigh=
+t: inherit; text-decoration: inherit; font-family: arial; font-style: =
+normal;" class=3D""> </span> </span><br class=3D""><span style=3D"colo=
+r: #000000; font-size: 14px; font-weight: bold; line-height: inherit; =
+text-decoration: inherit; font-family: arial; font-style: normal;" cla=
+ss=3D""> </span><br class=3D""><span style=3D"color: #000000; font-siz=
+e: 14px; font-weight: 400; line-height: inherit; text-decoration: inhe=
+rit; font-family: arial; font-style: normal;" class=3D"">Sincerely,</s=
+pan><br class=3D""><span style=3D"color: #000000; font-size: 14px; fon=
+t-weight: bold; line-height: inherit; text-decoration: inherit; font-f=
+amily: arial; font-style: normal;" class=3D""> </span><br class=3D""><=
+span style=3D"color: inherit;
+font-size: 14px; font-weight: bold; line-height: inherit; text-decorat=
+ion: inherit; font-style: italic;" class=3D"">Leon Petrou</span></div>
+</div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep=3D"true" data-ac-inline=3D"false"> #text_div268, #=
+text_div268 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<img src=3D"https://completerpabootcamp.acemlna.com/lt.php?nl=3D4&c=3D=
+44&m=3D67&s=3D83b4c11bbf14cae007e93735f93b0702&l=3Dopen" border=3D"0" =
+width=3D"1" height=3D"1" style=3D"display:block;width:1px!important;mi=
+n-width:1px!important;max-width:1px!important;height:1px!important;bor=
+der:0;overflow:hidden;" /><div id=3D"ac-footer" style=3D"clear:both;ba=
+ckground-color:inherit;background:inherit;min-width:100%;mso-table-lsp=
+ace:0pt;mso-table-rspace:0pt;padding:20px;color:#000000;font-size:11px=
+;font-family:arial,helvetica,sans-serif;line-height:140%;line-height:1=
+.4;text-align:center;box-sizing:border-box;">
+	<center>
+		Sent to: <span style=3D"font-size:11px;font-family:arial,helvetica,s=
+ans-serif;font-weight:normal;text-decoration:none;outline:none;">neera=
+jmachinelearning@gmail.com</span>
+		<br>
+		<br>
+		<a href=3D"https://completerpabootcamp.acemlna.com/proc.php?nl=3D4&c=
+=3D44&m=3D67&s=3D83b4c11bbf14cae007e93735f93b0702&act=3Dunsub" style=3D=
+"font-size:11px;font-family:arial,helvetica,sans-serif;font-weight:bol=
+d;text-decoration:underline;"><span style=3D"font-weight:bold;text-dec=
+oration:underline;">Unsubscribe</span></a>
+		<br>
+		<br> Complete RPA Bootcamp | Leon Petrou, Inc., 651 N. Broad St. , S=
+uite 206, Middletown, Delaware 19709, United States
+	</center>
+</div>
+<br clear=3D"all" /></body>
+</html>
+--=-VUHqMTd9+pBO6IlnkqSN4g==--

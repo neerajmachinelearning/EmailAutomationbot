@@ -1,0 +1,646 @@
+Delivered-To: neerajmachinelearning@gmail.com
+Received: by s3.asa1.acemsd3.com id h78joa2lshkh
+	for <neerajmachinelearning@gmail.com>;
+	Mon, 17 Aug 2020 06:45:25 +0000 (envelope-from <bounce-1084185-2-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com>)
+X-Google-Smtp-Source: ABdhPJy1A+qZHloE/ZzsSi9RENA2OHW63+rLyLst1YZTWv3g7B0IKKv4R5svITD/uGnOCGKspVYu
+X-Received: by 2002:ac8:7351:: with SMTP id
+ q17mr12574115qtp.111.1597646726047;        Sun, 16 Aug 2020 23:45:26 -0700
+ (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1597646726; cv=none; d=google.com;
+	s=arc-20160816;
+	b=Noo+wawCK5POeZqgcR9R7v0uIbmXuyciV3UNwv26Ct8wm4BbmPckdJgjAvjk7Z/P7Hmex75d83J
+	04vVOvSwtYrJwr2g0b0HtTTtviohfovZ7UkvKt6S4COH1dTlxrxMnkA8G1kM+HCINnDpNFypkn83o
+	DTVRYl3m5+nFAJp6tvk/bT5i5Uz//mRm2ebCUI7rcjXpLJNuQlAjBs65dJhYdHXPTu/QVA14iMWBx
+	GdSUEckLJX3N0SE6PYJfZrLa+Gvop+8YZotXPlQSUohYpm3iKYHWmi8mjXHnjVK0U5I9DaA8pQFGz
+	2F8682/kinGRoa7bf6wBXbLdDzcrcFiB8yGA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+	s=arc-20160816;
+	h=message-id:list-unsubscribe:feedback-id:content-transfer-encoding:
+	mime-version:date:subject:from:to:dkim-signature:dkim-signature;
+	bh=gg8U8ASQvbwsdQz3P18MOBIgEEhOlaNkT+Lh6ingsxU=;
+	b=oH+RtgMRbIL7MNbuCmDMxPyDf3f5zZChVac2LOsas8mOfmYgGxZcezJhgotkumw3PhfL+NbjxBd
+	a4UbLnF/7Ab+4JoUKnQ5uzL1eE/zoEF+xwu+Mo0CsSQZ+yUzlxIjiPdAIeNA7otNMA7Dn/7V2rs5I
+	jzUgAnhuB0lIhggEKef1RRVexZMskKPe/aZ0LQGGb4gNSRSycX/FwlBocrEYGgTlD7zu1HNI+U6nd
+	4sLksfhqkG9+u4TF7C+36GRlD1uz3Qey4OeSFEJ3hsUN/Pt/D41bSYxB3GXfs6BQN7d7r3eWDNXc2
+	5Fu/8+FI3bYOaiyFO8fMctNIVsfxQTCx8t3g==
+ARC-Authentication-Results: i=1; mx.google.com;
+	dkim=pass header.i=@completerpabootcamp.com header.s=dk header.b=R16kNgOi;
+	dkim=pass header.i=@acems1.com header.s=dk header.b=hjKLzOcF; spf=pass
+	(google.com: domain of bounce-1084185-2-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com designates 192.92.97.135 as permitted sender)
+	smtp.mailfrom=
+	"bounce-1084185-2-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com"
+Return-Path: <bounce-1084185-2-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com>
+Received-SPF: pass (google.com: domain of
+ bounce-1084185-2-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com
+ designates 192.92.97.135 as permitted sender) client-ip=192.92.97.135;
+Authentication-Results: mx.google.com;
+	dkim=pass header.i=@completerpabootcamp.com header.s=dk header.b=R16kNgOi;
+	dkim=pass header.i=@acems1.com header.s=dk header.b=hjKLzOcF; spf=pass
+	(google.com: domain of bounce-1084185-2-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com designates 192.92.97.135 as permitted sender)
+	smtp.mailfrom=
+	"bounce-1084185-2-16654-neerajmachinelearning=gmail.com@s3.asa1.acemsd3.com"
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk; d=acems1.com;
+	h=To:From:Subject:Date:MIME-Version:Content-Type:Content-Transfer-Encoding:
+	List-Unsubscribe:Message-ID;
+	bh=gg8U8ASQvbwsdQz3P18MOBIgEEhOlaNkT+Lh6ingsxU=;
+	b=hjKLzOcFsii6sIcw6X0muOJyKCVVuUTZn+8suhMmF7QSulUywkPn3vnukZIKgQQMK3wtcHwPG+v
+	ON98nDmxW2M19y5m283FwlGVQ28VXE4rNbPKrEV/VGRIbv43sUN+KkNph7qhrDT/5ZP7Ye5qZbV8u
+	X2cs+Gw4903GpMIH6kw=
+To: Neeraj Sharma <neerajmachinelearning@gmail.com>
+From: Leon Petrou <leon@completerpabootcamp.com>
+Subject: Complete RPA Bootcamp: Login + Exclusive Group Access
+Date: Mon, 17 Aug 2020 01:45:25 -0500
+MIME-Version: 1.0
+X-mid: bmVlcmFqbWFjaGluZWxlYXJuaW5nQGdtYWlsLmNvbSAsIGMyICwgbTcgLCBzOTM1Nw
+Feedback-ID: 1084185:activecampaign
+X-250ok-CID: 1084185-2
+List-Unsubscribe: =?us-ascii?q?=3Cmailto=3Aunsubscribe-a0f27a8abbf1e4821024a44fd9e8dd10-2-83b4c1?=
+ =?us-ascii?q?1bbf14cae007e93735f93b0702=40s3=2Easa1=2Eacemsd3=2Ecom=3E=2C?=
+ =?us-ascii?q?_=3Chttps=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Fbox=2Ephp=3Fnl=3D3&c=3D2&m=3D7?=
+ =?us-ascii?q?&s=3D83b4c11bbf14cae007e93735f93b0702&funcml=3Dunsub2&luha=3D1=3E?=
+Message-ID: <20200817064525.20158.1390784339.swift@completerpabootcamp.activehosted.com>
+Uid: 5
+Folder: Invoices
+HtmlBody: <!DOCTYPE html><html><head><!--[if !mso]><meta
+ http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--><meta
+ http-equiv="Content-Type" content="text/html; charset=utf-8"><meta
+ http-equiv="Content-Language" content="en-us"><meta name="format-detection"
+ content="telephone=no"><meta name="format-detection" content="date=no"><meta
+ name="format-detection" content="address=no"><meta name="format-detection"
+ content="email=no"><style data-ac-keep="true"> .ExternalClass { width: 100%;
+ background: inherit; background-color: inherit; } .ExternalClass p,
+ .ExternalClass ul, .ExternalClass ol { Margin: 0; } .undoreset div p,
+ .undoreset p { margin-bottom: 20px; } div[class^="aolmail_divbody"] {
+ overflow: auto; } [owa] #ac-footer { padding: 20px 0px !important;
+ background: inherit; background-color: inherit; } </style><style
+ data-ac-keep="true">@media only screen and (max-width: 600px) {
+ =?utf-8?q?=2F*-----------------------------------------------------------?=
+ =?utf-8?q?--------------*\?= Abandoned Cart widget
+ \*------------------------------------------------------------------------*/
+ .td_abandoned-cart img {display: block;padding-right: 0
+ !important;padding-bottom: 0 !important;width: 100% !important;max-width:
+ 100% !important;height: auto !important;} body { padding: 0!important;
+ font-size:1em!important; } * { -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box; box-sizing: border-box; } *[class].divbody
+ {-webkit-text-size-adjust:none !important; width:auto !important;}
+ *[class].td_picture img {width:auto !important;} *[class].td_text {
+ line-height: 110%; } *[class].td_button { width: auto; } /* Collapse all
+ block elements */ :not(.body) table { display: block!important;
+ float:none!important; border-collapse:collapse !important; width:100%
+ !important; min-width:100% !important; clear:both!important; } :not(.body)
+ thead,:not(.body) tbody, :not(.body) tr { display:block!important;
+ float:none!important; width:100% !important; } :not(.body) th, :not(.body)
+ td, :not(.body) p { display:block!important; float:none!important; width:100%
+ !important; clear:both!important; } /* Remove browser default styling for
+ elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; margin-top:
+ 10px; -webkit-margin-before: 0; -webkit-margin-after: 0;
+ -webkit-padding-start: 0; } /* Set default height for spacer once collapse */
+ *[class].spacer { height: auto!important; } a[href^=date]{ color:inherit
+ !important; text-decoration:none !important;} a[href^=telephone]{
+ color:inherit !important; text-decoration:none !important;} a[href^=address]{
+ color:inherit !important; text-decoration:none !important;} a[href^=email]{
+ color:inherit !important; text-decoration:none !important;} /* Default table
+ cell height */
+ =?utf-8?q?td=5Bheight=3D=2214=22=5D{height=3A14px!important=3Bfont-size=3A14px!importan?=
+ =?utf-8?q?t=3Bline-height=3A14px!important=3B}=2F*-----------------------------?=
+ =?utf-8?q?--------------------------------------------*\_Product_Widget?=
+ =?utf-8?q?_\*-----------------------------------------------------------?=
+ =?utf-8?q?--------------*=2F?= .td_product > div { float: none !important;
+ width: 100% !important; margin-bottom: 20px !important; } .td_product > div
+ img { width: 75% !important; } /* Default social icons */
+ *[class].ac-social-icon-16 {width:16px !important; height:16px !important;}
+ *[class].ac-social-icon-24 {width:24px !important; height:24px !important;}
+ *[class].ac-social-icon-28 {width:28px !important; height:28px !important;}
+ *[class].__ac_social_icons { margin-right: 0px !important; } }</style><style
+ data-ac-keep="true"> @media only screen and (max-width: 320px) {
+ #layout-row387 img { width: 100% !important; height: auto !important;
+ max-width: 320px !important; } div.divbody { padding: 20px !important; }
+ .td_rss .rss-item img.iphone_large_image { width: auto !important; } u +
+ .body { display: table !important; width: 100vw !important; min-width: 100vw
+ !important; } u + .body table { display: table !important; width: 100%
+ !important; min-width: 100% !important; } u + .body td { display: block
+ !important; width: 100% !important; min-width: 100% !important; } u + .body
+ img { display: inline-block !important; margin: auto !important; width: auto
+ !important; vertical-align: bottom !important; } u + .body center { display:
+ block !important; margin: auto !important; width: 100% !important; min-width:
+ 100% !important; text-align: center !important; } u + .body
+ table._ac_social_table, u + .body table._ac_social_table td, u + .body
+ table._ac_social_tablediv, u + .body table._ac_social_table a { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ min-width: auto !important; text-align: center !important; } u + .body
+ table._ac_social_table img { display: inline-block !important; margin: auto
+ !important; width: 32px !important; min-width: 32px !important; max-width:
+ 32px !important; }}@media only screen and (max-width: 375px) { #layout-row387
+ img { width: 100% !important; height: auto !important; max-width: 375px
+ !important; } div.divbody { padding: 20px !important; } .td_rss .rss-item
+ img.iphone_large_image { width: auto !important; } u + .body { display: table
+ !important; width: 100vw !important; min-width: 100vw !important; } u + .body
+ table { display: table !important; width: 100% !important; min-width: 100%
+ !important; } u + .body td { display: block !important; width: 100%
+ !important; min-width: 100% !important; } u + .body img { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ vertical-align: bottom !important; } u + .body center { display: block
+ !important; margin: auto !important; width: 100% !important; min-width: 100%
+ !important; text-align: center !important; } u + .body
+ table._ac_social_table, u + .body table._ac_social_table td, u + .body
+ table._ac_social_table div, u + .body table._ac_social_tablea { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ min-width: auto !important; text-align: center !important; } u + .body
+ table._ac_social_table img { display: inline-block !important; margin: auto
+ !important; width: 32px !important; min-width: 32px !important; max-width:
+ 32px !important; }}@media only screen and (max-width: 414px) { #layout-row387
+ img { width: 100% !important; height: auto !important; max-width: 414px
+ !important; } div.divbody { padding: 20px !important; } .td_rss .rss-item
+ img.iphone_large_image { width: auto !important; } u + .body { display: table
+ !important; width: 100vw !important; min-width: 100vw !important; } u + .body
+ table { display: table !important; width: 100% !important; min-width: 100%
+ !important; } u + .body td { display: block !important; width: 100%
+ !important; min-width: 100% !important; } u + .body img { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ vertical-align: bottom !important; } u + .body center { display: block
+ !important; margin: auto !important; width: 100% !important; min-width: 100%
+ !important; text-align: center !important; } u + .body
+ table._ac_social_table, u + .body table._ac_social_table td, u + .body
+ table._ac_social_table div, u + .body table._ac_social_tablea { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ min-width: auto !important; text-align: center !important; } u + .body
+ table._ac_social_table img { display: inline-block !important; margin: auto
+ !important; width: 32px !important; min-width: 32px !important; max-width:
+ 32px !important; }}@media only screen and (max-width: 667px) { #layout-row387
+ img { width: 100% !important; height: auto !important; max-width: 667px
+ !important; } div.divbody { padding: 20px !important; } .td_rss .rss-item
+ img.iphone_large_image { width: auto !important; } u + .body { display: table
+ !important; width: 100vw !important; min-width: 100vw !important; } u + .body
+ table { display: table !important; width: 100% !important; min-width: 100%
+ !important; } u + .body td { display: block !important; width: 100%
+ !important; min-width: 100% !important; } u + .body img { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ vertical-align: bottom !important; } u + .body center { display: block
+ !important; margin: auto !important; width: 100% !important; min-width: 100%
+ !important; text-align: center !important; } u + .body
+ table._ac_social_table, u + .body table._ac_social_table td, u + .body
+ table._ac_social_table div, u + .body table._ac_social_tablea { display:
+ inline-block !important; margin: auto !important; width: auto !important;
+ min-width: auto !important; text-align: center !important; } u + .body
+ table._ac_social_table img { display: inline-block !important; margin: auto
+ !important; width: 32px !important; min-width: 32px !important; max-width:
+ 32px !important; }} </style><!--[if !mso]><!-- webfonts
+ --><!--<![endif]--><!--[if lt mso 12]> <![endif]--></head><body
+ id="ac-designer" class="body" style="font-family: Arial; line-height: 1.1;
+ margin: 0px; background-color: #FFFFFF; width: 100%; text-align:
+ center;"><div class="divbody" style="margin: 0px; outline: none; padding:
+ 0px; color: #000000; font-family: arial; line-height: 1.1; width: 100%;
+ background-color: #FFFFFF; background: #FFFFFF; text-align: center;"><table
+ class="template-table" border="0" cellpadding="0" cellspacing="0"
+ width="100%" align="left" style="font-size: 14px; min-width: auto;
+ mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;
+ background: #FFFFFF;"><tr><td align="center" valign="top" width="100%"><table
+ class="template-table" border="0" cellpadding="0" cellspacing="0"
+ width="100%" bgcolor="#FFFFFF" style="font-size: 14px; min-width: auto;
+ mso-table-lspace: 0pt; mso-table-rspace:
+ 0pt;"><tr><tdid="layout_table_33d5d818f6ebdf285653f3ca6b0b8ca694aacc4a"
+ valign="top" align="center" width="100%"><table cellpadding="0"
+ cellspacing="0" border="0" class="layout layout-table root-table"
+ width="100%" style="font-size: 14px; min-width: 100%; mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;"><tr><td id="layout-row-margin387" valign="top"><table
+ width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size:
+ 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr
+ id="layout-row387" class="layout layout-row widget _widget_picture "
+ align="center"><td id="layout-row-padding387" valign="top"><table
+ width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size:
+ 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td
+ class="image-td" align="center" valign="top" width="100%"><img
+ =?utf-8?q?src=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eimgus11=2Ecom=2Fpublic=2F=2Ffc183322?=
+ =?utf-8?q?2d2ba5649642cf05d363033c=2Epng=3Fr=3D949752227=22?= alt=""
+ width="300" style="display:block; border: none; outline: none; width: 300px;
+ opacity: 1; max-width:
+ 100%;"></td></tr></table></td></tr></table></td></tr><tr><td
+ id="layout-row-margin2" valign="top" style="padding: 0;"><table width="100%"
+ border="0" cellpadding="0" cellspacing="0" style="font-size: 14px; min-width:
+ 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: initial
+ !important;"><tr id="layout-row2" class="layout layout-row widget
+ _widget_text style2" style="margin: 0; padding: 0;"><td
+ id="layout-row-padding2" valign="top" style="padding: 0 0 5px 0;"><table
+ width="100%" border="0" cellpadding="0" cellspacing="0" style="font-size:
+ 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td
+ id="text_div2" class="td_text td_block" valign="top" align="left"
+ style="line-height: 150%; margin: 0; outline: none; padding: 0; color:
+ inherit; font-size: 12px; font-weight: inherit; line-height: 1.5;
+ text-decoration: inherit; font-family: Arial; mso-line-height-rule:
+ exactly;"> <div style="line-height: 150%; margin: 0; outline: none; padding:
+ 0; font-size: 14px; line-height: 1.5;mso-line-height-rule: exactly;" class=""
+ data-line-height="1.5"> <div style="margin: 0; outline: none; padding: 0;"
+ class=""><div style="margin: 0; outline: none; padding: 0; font-family:
+ arial; color: #000000; font-style: normal; font-weight: 400; text-align:
+ start;" class=""><span style="color: inherit; font-size: inherit;
+ font-weight: inherit; line-height: inherit; text-decoration: inherit;
+ font-family: arial;" class=""> Hi </span><span style="color: #000000;
+ font-size: inherit; font-weight: 400; line-height: inherit; text-decoration:
+ inherit; font-family: arial;" class="">Neeraj</span><span style="color:
+ inherit; font-size: inherit; font-weight: inherit; line-height: inherit;
+ text-decoration: inherit; font-family: arial;" class="">!</span><br
+ class=""><br class=""></div><div style="margin: 0; outline: none; padding: 0;
+ font-family: arial; color: #000000; font-style: normal; text-align: start;"
+ class=""><span style="color: #000000; font-size: inherit; font-weight:
+ inherit; line-height: inherit; text-decoration: inherit; font-family: arial;
+ font-style: normal; text-align: start;" class=""><span style="color: inherit;
+ font-size: inherit; font-weight: 400; line-height: inherit; text-decoration:
+ inherit; font-family: arial;" class="">Your course access should be set, you
+ can login to your Members Area with the link below. Please reach out if you
+ have any issues at all - we are here 24/7/365 to help you with any and all
+ issues you might have.</span><br class=""><br class=""><strong class=""
+ style="margin: 0; outline: none; padding: 0; font-family: arial;"><a
+ =?utf-8?q?href=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Flt=2Ephp=3Fs=3D83b4c1?=
+ =?utf-8?q?1bbf14cae007e93735f93b0702&i=3D2A7A3A20=22?=
+ data-ac-default-color="1" style="margin: 0; outline: none; padding: 0;
+ color:#045FB4; text-decoration: underline;" target="_blank"><span
+ style="color: ; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: inherit;">Course Login
+ Link</span></a></strong></span></div><div style="margin: 0; outline: none;
+ padding: 0; font-family: arial; color: #000000; font-style: normal;
+ text-align: start;" class=""><span style="color: #000000; font-size: inherit;
+ font-weight: inherit; line-height: inherit; text-decoration: inherit;
+ font-family: arial; font-style: normal; text-align: start;" class=""><br
+ class="" style="font-weight: 700;"><span style="color: inherit; font-size:
+ inherit; font-weight: 400; line-height: inherit; text-decoration: inherit;
+ font-family: arial;" class="">You can also now join our Members-Only Facebook
+ Group to ask any of your questions and notifications on course
+ updates:</span><br class=""><br class=""><strong class="" style="margin: 0;
+ outline: none; padding: 0; font-family: arial;"><a
+ =?utf-8?q?href=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Flt=2Ephp=3Fs=3D83b4c1?=
+ =?utf-8?q?1bbf14cae007e93735f93b0702&i=3D2A7A3A21=22?=
+ data-ac-default-color="1" target="_blank" style="margin: 0; outline: none;
+ padding: 0; color: ; text-decoration: underline;"class=""><span style="color:
+ ; font-size: inherit; font-weight: inherit; line-height: inherit;
+ text-decoration: inherit;">Click here to join our Facebook
+ Group</span></a></strong></span></div><div style="margin: 0; outline: none;
+ padding: 0; font-family: arial; font-style: normal; text-align: start;"
+ class=""><span style="color: inherit; font-size: inherit; font-weight:
+ inherit; line-height: inherit; text-decoration: inherit; font-family: arial;
+ font-style: normal; text-align: start;" class=""><span style="color: #000000;
+ font-size: inherit; font-weight: 400; line-height: inherit; text-decoration:
+ inherit; font-family: arial;" class=""><br class=""><span class=""
+ style="color: #df0101; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: inherit;"><span style="color: #df0101; font-size:
+ 14px; font-weight: bold; line-height: inherit; text-decoration: inherit;
+ font-family: arial; font-style: italic;" class="">REMINDER</span><span
+ style="color: #df0101; font-size: 14px; font-weight: bold; line-height:
+ inherit; text-decoration: inherit; font-family: arial; font-style: italic;"
+ class="">: Your Purchase will Appear as "Complete RPABootcamp" or "<span
+ style="color: #df0101; font-size: inherit; font-weight: inherit; line-height:
+ inherit; text-decoration: inherit; font-family: arial;" class="">Leon Petrou,
+ Inc.</span>" depending on your Bank Processor! We want you to know
+ =?utf-8?b?aXTigJlz?= us. :)</span> <br><br><span style="color: #000000;
+ font-size: 14px; font-weight: 400; line-height: inherit; text-decoration:
+ inherit; font-family: arial; font-style: normal;">Thank you for joining and
+ welcome to the Bot Builder family!</span><br style="color: #df0101;"
+ class=""></span></span><br class=""><span style="color: #000000; font-size:
+ inherit; font-weight: 400; line-height: inherit; text-decoration: inherit;
+ font-family: arial;" class="">Regards,<br
+ class=""></span></span>Leon</div></div> </div><!--[if (gte mso 12)&(lte mso
+ 15) ]><style data-ac-keep="true" data-ac-inline="false"> #text_div2,
+ #text_div2 div { line-height: 150% !important;
+ =?utf-8?q?}=3B=3C=2Fstyle=3E=3C!=5Bendif=5D--=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Ft?=
+ =?utf-8?q?d=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Ftd=3E=3C=2Ftr=3E=3C=2Ftable=3E=3C=2Fdiv=3E=3Cimg?=
+ =?utf-8?q?_src=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Flt=2Ephp=3Fnl=3D3&c=3D2&?=
+ =?utf-8?q?m=3D7&s=3D83b4c11bbf14cae007e93735f93b0702&l=3Dopen=22_border=3D=220=22?=
+ width="1" height="1"
+ =?utf-8?q?style=3D=22display=3Ablock=3Bwidth=3A1px!important=3Bmin-width=3A1px!import?=
+ =?utf-8?q?ant=3Bmax-width=3A1px!important=3Bheight=3A1px!important=3Bborder=3A0=3Bove?=
+ =?utf-8?q?rflow=3Ahidden=3B=22_=2F=3E=3Cdiv_id=3D=22ac-footer=22?=
+ =?utf-8?q?_style=3D=22clear=3Aboth=3Bbackground-color=3Ainherit=3Bbackground=3Ainherit?=
+ =?utf-8?q?=3Bmin-width=3A100%=3Bmso-table-lspace=3A0pt=3Bmso-table-rspace=3A0pt=3Bpad?=
+ =?utf-8?q?ding=3A20px=3Bcolor=3A#000000=3Bfont-size=3A11px=3Bfont-family=3Aarial=2Chelv?=
+ =?utf-8?q?etica=2Csans-serif=3Bline-height=3A140%=3Bline-height=3A1=2E4=3Btext-align=3A?=
+ =?utf-8?q?center=3Bbox-sizing=3Aborder-box=3B=22=3E?=	<center>		Sent to:
+ <span
+ =?utf-8?q?style=3D=22font-size=3A11px=3Bfont-family=3Aarial=2Chelvetica=2Csans-serif=3B?=
+ =?utf-8?q?font-weight=3Anormal=3Btext-decoration=3Anone=3Boutline=3Anone=3B=22=3Eneeraj?=
+ =?utf-8?q?machinelearning=40gmail=2Ecom=3C=2Fspan=3E=09=09=3Cbr=3E=09=09=3Cbr=3E=09=09=3Ca?=
+ =?utf-8?q?_href=3D=22https=3A=2F=2Fcompleterpabootcamp=2Eacemlna=2Ecom=2Fproc=2Ephp=3Fnl=3D3&c?=
+ =?utf-8?q?=3D2&m=3D7&s=3D83b4c11bbf14cae007e93735f93b0702&act=3Dunsub=22?=
+ =?utf-8?q?_style=3D=22font-size=3A11px=3Bfont-family=3Aarial=2Chelvetica=2Csans-serif=3B?=
+ =?utf-8?q?font-weight=3Abold=3Btext-decoration=3Aunderline=3B=22=3E=3Cspan?=
+ style="font-weight:bold;text-decoration:underline;">Unsubscribe</span></a>	
+	<br>		<br> Complete RPA Bootcamp | Leon Petrou, Inc., 651 N. Broad St. ,
+ Suite 206, Middletown, Delaware 19709, United States	</center></div><br
+ clear="all" /></body></html>
+Content-Type: multipart/alternative; boundary="=-aIFfsZ4INGrRilg5AyyZuA=="
+
+--=-aIFfsZ4INGrRilg5AyyZuA==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Id: <ecb2a55f-e37c-4de2-b7ff-f53b3eef023b>
+
+<!DOCTYPE html><html>
+<head><!--[if !mso]><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=
+=3Dedge"><!--<![endif]--><meta http-equiv=3D"Content-Type" content=3D"=
+text/html; charset=3Dutf-8"><meta http-equiv=3D"Content-Language" cont=
+ent=3D"en-us"><meta name=3D"format-detection" content=3D"telephone=3Dn=
+o"><meta name=3D"format-detection" content=3D"date=3Dno"><meta name=3D=
+"format-detection" content=3D"address=3Dno"><meta name=3D"format-detec=
+tion" content=3D"email=3Dno"><style data-ac-keep=3D"true"> .ExternalCl=
+ass { width: 100%; background: inherit; background-color: inherit; } .=
+ExternalClass p, .ExternalClass ul, .ExternalClass ol { Margin: 0; } .=
+undoreset div p, .undoreset p { margin-bottom: 20px; } div[class^=3D"a=
+olmail_divbody"] { overflow: auto; } [owa] #ac-footer { padding: 20px =
+0px !important; background: inherit; background-color: inherit; } </st=
+yle><style data-ac-keep=3D"true">
+@media only screen and (max-width: 600px) { /*------------------------=
+-------------------------------------------------*\ Abandoned Cart wid=
+get \*----------------------------------------------------------------=
+--------*/ .td_abandoned-cart img {display: block;padding-right: 0 !im=
+portant;padding-bottom: 0 !important;width: 100% !important;max-width:=
+ 100% !important;height: auto !important;} body { padding: 0!important=
+; font-size:1em!important; } * { -webkit-box-sizing: border-box; -moz-=
+box-sizing: border-box; box-sizing: border-box; } *[class].divbody {-w=
+ebkit-text-size-adjust:none !important; width:auto !important;} *[clas=
+s].td_picture img {width:auto !important;} *[class].td_text { line-hei=
+ght: 110%; } *[class].td_button { width: auto; } /* Collapse all block=
+ elements */ :not(.body) table { display: block!important; float:none!=
+important; border-collapse:collapse !important; width:100% !important;=
+ min-width:100% !important; clear:both!important; } :not(.body) thead,
+:not(.body) tbody, :not(.body) tr { display:block!important; float:non=
+e!important; width:100% !important; } :not(.body) th, :not(.body) td, =
+:not(.body) p { display:block!important; float:none!important; width:1=
+00% !important; clear:both!important; } /* Remove browser default styl=
+ing for elements */ ul, ol { margin-left: 20px; margin-bottom: 10px; m=
+argin-top: 10px; -webkit-margin-before: 0; -webkit-margin-after: 0; -w=
+ebkit-padding-start: 0; } /* Set default height for spacer once collap=
+se */ *[class].spacer { height: auto!important; } a[href^=3Ddate]{ col=
+or:inherit !important; text-decoration:none !important;} a[href^=3Dtel=
+ephone]{ color:inherit !important; text-decoration:none !important;} a=
+[href^=3Daddress]{ color:inherit !important; text-decoration:none !imp=
+ortant;} a[href^=3Demail]{ color:inherit !important; text-decoration:n=
+one !important;} /* Default table cell height */ td[height=3D"14"]{hei=
+ght:14px!important;font-size:14px!important;line-height:14px!important=
+;}
+/*--------------------------------------------------------------------=
+-----*\ Product Widget \*---------------------------------------------=
+----------------------------*/ .td_product > div { float: none !import=
+ant; width: 100% !important; margin-bottom: 20px !important; } .td_pro=
+duct > div img { width: 75% !important; } /* Default social icons */ *=
+[class].ac-social-icon-16 {width:16px !important; height:16px !importa=
+nt;} *[class].ac-social-icon-24 {width:24px !important; height:24px !i=
+mportant;} *[class].ac-social-icon-28 {width:28px !important; height:2=
+8px !important;} *[class].__ac_social_icons { margin-right: 0px !impor=
+tant; } }
+</style><style data-ac-keep=3D"true"> @media only screen and (max-widt=
+h: 320px) { #layout-row387 img { width: 100% !important; height: auto =
+!important; max-width: 320px !important; } div.divbody { padding: 20px=
+ !important; } .td_rss .rss-item img.iphone_large_image { width: auto =
+!important; } u + .body { display: table !important; width: 100vw !imp=
+ortant; min-width: 100vw !important; } u + .body table { display: tabl=
+e !important; width: 100% !important; min-width: 100% !important; } u =
++ .body td { display: block !important; width: 100% !important; min-wi=
+dth: 100% !important; } u + .body img { display: inline-block !importa=
+nt; margin: auto !important; width: auto !important; vertical-align: b=
+ottom !important; } u + .body center { display: block !important; marg=
+in: auto !important; width: 100% !important; min-width: 100% !importan=
+t; text-align: center !important; } u + .body table._ac_social_table, =
+u + .body table._ac_social_table td, u + .body table._ac_social_table
+div, u + .body table._ac_social_table a { display: inline-block !impor=
+tant; margin: auto !important; width: auto !important; min-width: auto=
+ !important; text-align: center !important; } u + .body table._ac_soci=
+al_table img { display: inline-block !important; margin: auto !importa=
+nt; width: 32px !important; min-width: 32px !important; max-width: 32p=
+x !important; }
+}
+@media only screen and (max-width: 375px) { #layout-row387 img { width=
+: 100% !important; height: auto !important; max-width: 375px !importan=
+t; } div.divbody { padding: 20px !important; } .td_rss .rss-item img.i=
+phone_large_image { width: auto !important; } u + .body { display: tab=
+le !important; width: 100vw !important; min-width: 100vw !important; }=
+ u + .body table { display: table !important; width: 100% !important; =
+min-width: 100% !important; } u + .body td { display: block !important=
+; width: 100% !important; min-width: 100% !important; } u + .body img =
+{ display: inline-block !important; margin: auto !important; width: au=
+to !important; vertical-align: bottom !important; } u + .body center {=
+ display: block !important; margin: auto !important; width: 100% !impo=
+rtant; min-width: 100% !important; text-align: center !important; } u =
++ .body table._ac_social_table, u + .body table._ac_social_table td, u=
+ + .body table._ac_social_table div, u + .body table._ac_social_table
+a { display: inline-block !important; margin: auto !important; width: =
+auto !important; min-width: auto !important; text-align: center !impor=
+tant; } u + .body table._ac_social_table img { display: inline-block !=
+important; margin: auto !important; width: 32px !important; min-width:=
+ 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 414px) { #layout-row387 img { width=
+: 100% !important; height: auto !important; max-width: 414px !importan=
+t; } div.divbody { padding: 20px !important; } .td_rss .rss-item img.i=
+phone_large_image { width: auto !important; } u + .body { display: tab=
+le !important; width: 100vw !important; min-width: 100vw !important; }=
+ u + .body table { display: table !important; width: 100% !important; =
+min-width: 100% !important; } u + .body td { display: block !important=
+; width: 100% !important; min-width: 100% !important; } u + .body img =
+{ display: inline-block !important; margin: auto !important; width: au=
+to !important; vertical-align: bottom !important; } u + .body center {=
+ display: block !important; margin: auto !important; width: 100% !impo=
+rtant; min-width: 100% !important; text-align: center !important; } u =
++ .body table._ac_social_table, u + .body table._ac_social_table td, u=
+ + .body table._ac_social_table div, u + .body table._ac_social_table
+a { display: inline-block !important; margin: auto !important; width: =
+auto !important; min-width: auto !important; text-align: center !impor=
+tant; } u + .body table._ac_social_table img { display: inline-block !=
+important; margin: auto !important; width: 32px !important; min-width:=
+ 32px !important; max-width: 32px !important; }
+}
+@media only screen and (max-width: 667px) { #layout-row387 img { width=
+: 100% !important; height: auto !important; max-width: 667px !importan=
+t; } div.divbody { padding: 20px !important; } .td_rss .rss-item img.i=
+phone_large_image { width: auto !important; } u + .body { display: tab=
+le !important; width: 100vw !important; min-width: 100vw !important; }=
+ u + .body table { display: table !important; width: 100% !important; =
+min-width: 100% !important; } u + .body td { display: block !important=
+; width: 100% !important; min-width: 100% !important; } u + .body img =
+{ display: inline-block !important; margin: auto !important; width: au=
+to !important; vertical-align: bottom !important; } u + .body center {=
+ display: block !important; margin: auto !important; width: 100% !impo=
+rtant; min-width: 100% !important; text-align: center !important; } u =
++ .body table._ac_social_table, u + .body table._ac_social_table td, u=
+ + .body table._ac_social_table div, u + .body table._ac_social_table
+a { display: inline-block !important; margin: auto !important; width: =
+auto !important; min-width: auto !important; text-align: center !impor=
+tant; } u + .body table._ac_social_table img { display: inline-block !=
+important; margin: auto !important; width: 32px !important; min-width:=
+ 32px !important; max-width: 32px !important; }
+} </style><!--[if !mso]><!-- webfonts --><!--<![endif]--><!--[if lt ms=
+o 12]> <![endif]--></head><body id=3D"ac-designer" class=3D"body" styl=
+e=3D"font-family: Arial; line-height: 1.1; margin: 0px; background-col=
+or: #FFFFFF; width: 100%; text-align: center;"><div class=3D"divbody" =
+style=3D"margin: 0px; outline: none; padding: 0px; color: #000000; fon=
+t-family: arial; line-height: 1.1; width: 100%; background-color: #FFF=
+FFF; background: #FFFFFF; text-align: center;"><table class=3D"templat=
+e-table" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" align=3D"left" style=3D"font-size: 14px; min-width: auto; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF; backgr=
+ound: #FFFFFF;"><tr><td align=3D"center" valign=3D"top" width=3D"100%"=
+><table class=3D"template-table" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" bgcolor=3D"#FFFFFF" style=3D"font-size: 14p=
+x; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr=
+><td
+id=3D"layout_table_33d5d818f6ebdf285653f3ca6b0b8ca694aacc4a" valign=3D=
+"top" align=3D"center" width=3D"100%"><table cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0" class=3D"layout layout-table root-table" width=
+=3D"100%" style=3D"font-size: 14px; min-width: 100%; mso-table-lspace:=
+ 0pt; mso-table-rspace: 0pt;"><tr><td id=3D"layout-row-margin387" vali=
+gn=3D"top"><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"font-size: 14px; min-width: 100%; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt;"><tr id=3D"layout-row387" class=3D"layo=
+ut layout-row widget _widget_picture " align=3D"center"><td id=3D"layo=
+ut-row-padding387" valign=3D"top"><table width=3D"100%" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" style=3D"font-size: 14px; min-width=
+: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td class=3D=
+"image-td" align=3D"center" valign=3D"top" width=3D"100%"><img src=3D"=
+https://completerpabootcamp.imgus11.com/public//fc1833222d2ba5649642cf=
+05d363033c.png?r=3D949752227" alt=3D"" width=3D"300" style=3D"display:
+block; border: none; outline: none; width: 300px; opacity: 1; max-widt=
+h: 100%;"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td id=3D"layout-row-margin2" valign=3D"top" style=3D"padding: 0;"=
+><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: initial !important;"><tr id=3D"l=
+ayout-row2" class=3D"layout layout-row widget _widget_text style2" sty=
+le=3D"margin: 0; padding: 0;"><td id=3D"layout-row-padding2" valign=3D=
+"top" style=3D"padding: 0 0 5px 0;"><table width=3D"100%" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size: 14px; min-wid=
+th: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><tr><td id=3D=
+"text_div2" class=3D"td_text td_block" valign=3D"top" align=3D"left" s=
+tyle=3D"line-height: 150%; margin: 0; outline: none; padding: 0; color=
+: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; te=
+xt-decoration: inherit; font-family: Arial; mso-line-height-rule: exac=
+tly;"> <div style=3D"line-height: 150%; margin: 0; outline: none; padd=
+ing: 0; font-size: 14px; line-height: 1.5;
+mso-line-height-rule: exactly;" class=3D"" data-line-height=3D"1.5"> <=
+div style=3D"margin: 0; outline: none; padding: 0;" class=3D""><div st=
+yle=3D"margin: 0; outline: none; padding: 0; font-family: arial; color=
+: #000000; font-style: normal; font-weight: 400; text-align: start;" c=
+lass=3D""><span style=3D"color: inherit; font-size: inherit; font-weig=
+ht: inherit; line-height: inherit; text-decoration: inherit; font-fami=
+ly: arial;" class=3D""> Hi </span><span style=3D"color: #000000; font-=
+size: inherit; font-weight: 400; line-height: inherit; text-decoration=
+: inherit; font-family: arial;" class=3D"">Neeraj</span><span style=3D=
+"color: inherit; font-size: inherit; font-weight: inherit; line-height=
+: inherit; text-decoration: inherit; font-family: arial;" class=3D"">!=
+</span><br class=3D""><br class=3D""></div>
+<div style=3D"margin: 0; outline: none; padding: 0; font-family: arial=
+; color: #000000; font-style: normal; text-align: start;" class=3D""><=
+span style=3D"color: #000000; font-size: inherit; font-weight: inherit=
+; line-height: inherit; text-decoration: inherit; font-family: arial; =
+font-style: normal; text-align: start;" class=3D""><span style=3D"colo=
+r: inherit; font-size: inherit; font-weight: 400; line-height: inherit=
+; text-decoration: inherit; font-family: arial;" class=3D"">Your cours=
+e access should be set, you can login to your Members Area with the li=
+nk below. Please reach out if you have any issues at all - we are here=
+ 24/7/365 to help you with any and all issues you might have.</span><b=
+r class=3D""><br class=3D""><strong class=3D"" style=3D"margin: 0; out=
+line: none; padding: 0; font-family: arial;"><a href=3D"https://comple=
+terpabootcamp.acemlna.com/lt.php?s=3D83b4c11bbf14cae007e93735f93b0702&=
+i=3D2A7A3A20" data-ac-default-color=3D"1" style=3D"margin: 0; outline:=
+ none; padding: 0; color:
+#045FB4; text-decoration: underline;" target=3D"_blank"><span style=3D=
+"color: ; font-size: inherit; font-weight: inherit; line-height: inher=
+it; text-decoration: inherit;">Course Login Link</span></a></strong></=
+span></div>
+<div style=3D"margin: 0; outline: none; padding: 0; font-family: arial=
+; color: #000000; font-style: normal; text-align: start;" class=3D""><=
+span style=3D"color: #000000; font-size: inherit; font-weight: inherit=
+; line-height: inherit; text-decoration: inherit; font-family: arial; =
+font-style: normal; text-align: start;" class=3D""><br class=3D"" styl=
+e=3D"font-weight: 700;"><span style=3D"color: inherit; font-size: inhe=
+rit; font-weight: 400; line-height: inherit; text-decoration: inherit;=
+ font-family: arial;" class=3D"">You can also now join our Members-Onl=
+y Facebook Group to ask any of your questions and notifications on cou=
+rse updates:</span><br class=3D""><br class=3D""><strong class=3D"" st=
+yle=3D"margin: 0; outline: none; padding: 0; font-family: arial;"><a h=
+ref=3D"https://completerpabootcamp.acemlna.com/lt.php?s=3D83b4c11bbf14=
+cae007e93735f93b0702&i=3D2A7A3A21" data-ac-default-color=3D"1" target=3D=
+"_blank" style=3D"margin: 0; outline: none; padding: 0; color: ; text-=
+decoration: underline;"
+class=3D""><span style=3D"color: ; font-size: inherit; font-weight: in=
+herit; line-height: inherit; text-decoration: inherit;">Click here to =
+join our Facebook Group</span></a></strong></span></div>
+<div style=3D"margin: 0; outline: none; padding: 0; font-family: arial=
+; font-style: normal; text-align: start;" class=3D""><span style=3D"co=
+lor: inherit; font-size: inherit; font-weight: inherit; line-height: i=
+nherit; text-decoration: inherit; font-family: arial; font-style: norm=
+al; text-align: start;" class=3D""><span style=3D"color: #000000; font=
+-size: inherit; font-weight: 400; line-height: inherit; text-decoratio=
+n: inherit; font-family: arial;" class=3D""><br class=3D""><span class=
+=3D"" style=3D"color: #df0101; font-size: inherit; font-weight: inheri=
+t; line-height: inherit; text-decoration: inherit;"><span style=3D"col=
+or: #df0101; font-size: 14px; font-weight: bold; line-height: inherit;=
+ text-decoration: inherit; font-family: arial; font-style: italic;" cl=
+ass=3D"">REMINDER</span><span style=3D"color: #df0101; font-size: 14px=
+; font-weight: bold; line-height: inherit; text-decoration: inherit; f=
+ont-family: arial; font-style: italic;" class=3D"">: Your Purchase wil=
+l Appear as "Complete RPA
+Bootcamp" or "<span style=3D"color: #df0101; font-size: inherit; font-=
+weight: inherit; line-height: inherit; text-decoration: inherit; font-=
+family: arial;" class=3D"">Leon Petrou, Inc.</span>" depending on your=
+ Bank Processor! We want you to know it=E2=80=99s us. :)</span> <br><b=
+r><span style=3D"color: #000000; font-size: 14px; font-weight: 400; li=
+ne-height: inherit; text-decoration: inherit; font-family: arial; font=
+-style: normal;">Thank you for joining and welcome to the Bot Builder =
+family!</span><br style=3D"color: #df0101;" class=3D""></span></span><=
+br class=3D""><span style=3D"color: #000000; font-size: inherit; font-=
+weight: 400; line-height: inherit; text-decoration: inherit; font-fami=
+ly: arial;" class=3D"">Regards,<br class=3D""></span></span>Leon</div>
+</div>
+ </div>
+<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep=3D"true" data-ac-inline=3D"false"> #text_div2, #te=
+xt_div2 div { line-height: 150% !important; };
+</style>
+<![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<img src=3D"https://completerpabootcamp.acemlna.com/lt.php?nl=3D3&c=3D=
+2&m=3D7&s=3D83b4c11bbf14cae007e93735f93b0702&l=3Dopen" border=3D"0" wi=
+dth=3D"1" height=3D"1" style=3D"display:block;width:1px!important;min-=
+width:1px!important;max-width:1px!important;height:1px!important;borde=
+r:0;overflow:hidden;" /><div id=3D"ac-footer" style=3D"clear:both;back=
+ground-color:inherit;background:inherit;min-width:100%;mso-table-lspac=
+e:0pt;mso-table-rspace:0pt;padding:20px;color:#000000;font-size:11px;f=
+ont-family:arial,helvetica,sans-serif;line-height:140%;line-height:1.4=
+;text-align:center;box-sizing:border-box;">
+	<center>
+		Sent to: <span style=3D"font-size:11px;font-family:arial,helvetica,s=
+ans-serif;font-weight:normal;text-decoration:none;outline:none;">neera=
+jmachinelearning@gmail.com</span>
+		<br>
+		<br>
+		<a href=3D"https://completerpabootcamp.acemlna.com/proc.php?nl=3D3&c=
+=3D2&m=3D7&s=3D83b4c11bbf14cae007e93735f93b0702&act=3Dunsub" style=3D"=
+font-size:11px;font-family:arial,helvetica,sans-serif;font-weight:bold=
+;text-decoration:underline;"><span style=3D"font-weight:bold;text-deco=
+ration:underline;">Unsubscribe</span></a>
+		<br>
+		<br> Complete RPA Bootcamp | Leon Petrou, Inc., 651 N. Broad St. , S=
+uite 206, Middletown, Delaware 19709, United States
+	</center>
+</div>
+<br clear=3D"all" /></body>
+</html>
+--=-aIFfsZ4INGrRilg5AyyZuA==--
